@@ -1,2 +1,2 @@
 # trillo
-A landing page hotel ratings utilising flexbox 
+ A landing page for a hotel
