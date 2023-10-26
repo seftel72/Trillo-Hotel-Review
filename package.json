@@ -1,0 +1,28 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "A Hotel Ratings Webpage",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    
+    "compile:sass": "node-sass css/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b",
+    "compress:css": "node-sass css/style.prefix.css css/style.css  --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Brad Seftel",
+  "license": "ISC",
+  "devDependancies": {
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
