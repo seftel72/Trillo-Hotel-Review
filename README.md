@@ -1,2 +1,2 @@
-# trillo
- A landing page for a hotel
+# TRILLO
+ A landing page for a hotel review ratinf system
